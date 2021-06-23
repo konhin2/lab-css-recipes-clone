@@ -1,9 +1,75 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300;400&display=swap');
+html,
+body {
   margin: 0;
+  padding: 0;
 }
-/*Import the font and set the default size*/
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 2.5em;
+}
+h1,
+h2 {
+    font-weight: 300;
+}
+h1 {
+    font-size: 6em;
+}
+h2 {
+    font-size: 2em;
+}
+/* Header */
+.header {
+    height: 600px;
+    background-image: url("../images/soup.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    position: relative;
+}
+.header > h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 34%;
+}
+/* Articles */
+.artic {
+    text-align: justify;
+    font-size: 1.7em;
+    margin: 50px 10% 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artic2 {
+    font-size: 1.7em;
+    margin: 10px 10% 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artic2 > h2 {
+    align-self: flex-start;
+}
+.artic2 > section {
+    align-self: flex-start;
+    text-align: justify;
+}
+.hmar {
+    margin: 0 10% 0 10%;
+}
+.images {
+    width: 350px;
+}
+.artic2 section ul {
+    list-style-type: none;
+}
+.artic2 ol {
+    list-style-type: none;
 }
